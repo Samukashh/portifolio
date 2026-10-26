@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samuel Henrique Santos da Silva — Desenvolvedor multiplataforma</title>
+    <meta name="description" content="Portfólio de Samuel Henrique: estudante de desenvolvimento com base em banco de dados, automação, documentação e trabalho em equipe, buscando estágio em Infraestrutura e Cloud.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,700;0,6..96,900;1,6..96,900&family=Caveat:wght@700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Meu CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="barra-progresso" id="progresso"></div>
+
+    <!-- NAV -->
+    <nav class="nav-topo" id="nav">
+        <div class="container-xl d-flex align-items-center justify-content-between">
+            <a href="#capa" class="logo"><svg viewBox="0 0 100 100" width="26" height="26"><path d="M50 2 Q56 44 98 50 Q56 56 50 98 Q44 56 2 50 Q44 44 50 2Z" fill="currentColor"/></svg> samuel</a>
+            <div class="links d-none d-md-flex align-items-center gap-4">
+                <a href="#sobre">SOBRE</a>
+                <a href="#habilidades">HABILIDADES</a>
+                <a href="#projetos">PROJETOS</a>
+                <a href="#curriculo">CURRÍCULO</a>
+                <a href="#contato" class="pilula">CONTATO</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 1. CAPA -->
+    <header class="capa" id="capa">
+        <div class="pautado"></div>
+
+        <svg class="cena-svg sol" data-parallax="0.02" viewBox="0 0 660 420" aria-hidden="true">
+            <ellipse cx="330" cy="236" rx="300" ry="60" transform="rotate(-14 330 236)" fill="var(--cobalto-claro)" opacity=".85"/>
+            <ellipse cx="330" cy="206" rx="310" ry="64" transform="rotate(-14 330 206)" fill="none" stroke="var(--tinta)" stroke-width="2.4"/>
+            <g class="gira" transform="translate(330 170) scale(2.6) translate(-50 -50)"><path d="M50 2 Q56 44 98 50 Q56 56 50 98 Q44 56 2 50 Q44 44 50 2Z" fill="var(--sol)" stroke="var(--tinta)" stroke-width="1.2" stroke-linejoin="round"/></g>
+        </svg>
+
+        <svg class="cena-svg serra-tras" data-parallax="0.04" viewBox="0 0 1440 560" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M0 300 L120 190 L260 260 L420 120 L600 250 L760 150 L940 270 L1120 140 L1300 240 L1440 180 V560 H0Z" fill="var(--cobalto-claro)" stroke="var(--tinta)" stroke-width="2.4" stroke-linejoin="round"/>
+        </svg>
+        <svg class="cena-svg serra" data-parallax="0.07" viewBox="0 0 1440 560" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M0 340 L160 230 L300 300 L480 170 L640 290 L820 200 L1000 310 L1180 190 L1440 300 V560 H0Z" fill="var(--cobalto)" stroke="var(--tinta)" stroke-width="2.6" stroke-linejoin="round"/>
+            <g stroke="var(--tinta)" stroke-width="1.6" opacity=".55"><path d="M40 330 l26 -26"/><path d="M77 348 l26 -26"/><path d="M114 366 l26 -26"/><path d="M151 384 l26 -26"/><path d="M188 402 l26 -26"/><path d="M225 330 l26 -26"/><path d="M262 348 l26 -26"/><path d="M299 366 l26 -26"/><path d="M336 384 l26 -26"/><path d="M373 402 l26 -26"/><path d="M410 330 l26 -26"/><path d="M447 348 l26 -26"/><path d="M484 366 l26 -26"/><path d="M521 384 l26 -26"/><path d="M558 402 l26 -26"/><path d="M595 330 l26 -26"/><path d="M632 348 l26 -26"/><path d="M669 366 l26 -26"/><path d="M706 384 l26 -26"/><path d="M743 402 l26 -26"/><path d="M780 330 l26 -26"/><path d="M817 348 l26 -26"/><path d="M854 366 l26 -26"/><path d="M891 384 l26 -26"/><path d="M928 402 l26 -26"/><path d="M965 330 l26 -26"/><path d="M1002 348 l26 -26"/><path d="M1039 366 l26 -26"/><path d="M1076 384 l26 -26"/><path d="M1113 402 l26 -26"/><path d="M1150 330 l26 -26"/><path d="M1187 348 l26 -26"/><path d="M1224 366 l26 -26"/><path d="M1261 384 l26 -26"/><path d="M1298 402 l26 -26"/><path d="M1335 330 l26 -26"/><path d="M1372 348 l26 -26"/><path d="M1409 366 l26 -26"/></g>
+        </svg>
+
+        <div class="mar"><span class="onda o1"></span><span class="onda o2"></span><span class="onda o3"></span></div>
+        <div class="areia"></div>
+
+        <svg class="palmeira esq" viewBox="0 0 200 340" aria-hidden="true"><g stroke="#12141F" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+    <path class="tronco" d="M96 340 Q92 240 112 130 L124 132 Q108 240 118 340Z" fill="#FFC93C"/>
+    <g class="folhas">
+        <path d="M118 128 Q60 60 6 100 Q64 84 112 132Z" fill="#14D9E6"/>
+        <path d="M118 128 Q150 40 196 56 Q150 64 122 132Z" fill="#14D9E6"/>
+        <path d="M118 128 Q90 20 30 24 Q86 44 114 132Z" fill="#9BF3F3"/>
+        <path d="M118 128 Q190 90 198 150 Q160 110 122 134Z" fill="#9BF3F3"/>
+        <path d="M118 128 Q50 140 20 190 Q70 150 114 134Z" fill="#14D9E6"/>
+    </g>
+    <circle cx="112" cy="140" r="9" fill="#E8352A"/><circle cx="127" cy="143" r="9" fill="#E8352A"/>
+</g>
+</svg>
+        <svg class="palmeira dir" viewBox="0 0 200 340" aria-hidden="true"><g stroke="#12141F" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+    <path class="tronco" d="M96 340 Q92 240 112 130 L124 132 Q108 240 118 340Z" fill="#FFC93C"/>
+    <g class="folhas">
+        <path d="M118 128 Q60 60 6 100 Q64 84 112 132Z" fill="#14D9E6"/>
+        <path d="M118 128 Q150 40 196 56 Q150 64 122 132Z" fill="#14D9E6"/>
+        <path d="M118 128 Q90 20 30 24 Q86 44 114 132Z" fill="#9BF3F3"/>
+        <path d="M118 128 Q190 90 198 150 Q160 110 122 134Z" fill="#9BF3F3"/>
+        <path d="M118 128 Q50 140 20 190 Q70 150 114 134Z" fill="#14D9E6"/>
+    </g>
+    <circle cx="112" cy="140" r="9" fill="#E8352A"/><circle cx="127" cy="143" r="9" fill="#E8352A"/>
+</g>
+</svg>
+
+        <svg class="brilho b1" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 2 Q56 44 98 50 Q56 56 50 98 Q44 56 2 50 Q44 44 50 2Z" fill="var(--sol)" stroke="var(--tinta)" stroke-width="3"/></svg>
+        <svg class="brilho b2" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 2 Q56 44 98 50 Q56 56 50 98 Q44 56 2 50 Q44 44 50 2Z" fill="var(--ciano-claro)" stroke="var(--tinta)" stroke-width="3"/></svg>
+
+        <div class="container-xl capa-texto">
+            <h1 class="titulo-gigante" data-split>SAMUEL</h1>
+            <p class="sub-mao">portfólio vivo</p>
+            <svg class="sublinhado" viewBox="0 0 420 24" aria-hidden="true"><path d="M4 16 Q60 2 120 14 T240 12 T416 10" fill="none" stroke="var(--caneta)" stroke-width="5" stroke-linecap="round" pathLength="1"/></svg>
+            <div class="meta">
+                <span>BANCO DE DADOS · AUTOMAÇÃO · DOCUMENTAÇÃO</span>
+                <span class="pilula pilula-cobalto">BUSCANDO ESTÁGIO EM INFRA &amp; CLOUD</span>
+            </div>
+        </div>
+        <a href="#sobre" class="dica-role">role ↓</a>
+    </header>
+
+    <!-- 2. SOBRE -->
+    <section class="cena cena-papel" id="sobre">
+        <div class="faixa-cobalto"></div>
+        <div class="container-xl">
+            <p class="rotulo"><svg viewBox="0 0 100 100" width="22" height="22"><path d="M50 2 Q56 44 98 50 Q56 56 50 98 Q44 56 2 50 Q44 44 50 2Z" fill="var(--cobalto)"/></svg> 02 — SOBRE</p>
+            <div class="row align-items-center gy-5">
+                <div class="col-12 col-lg-4">
+                    <div class="ingresso-retrato" data-tilt>
+                        <div class="foto">
+                            <svg viewBox="0 0 100 100" aria-hidden="true"><path d="M50 2 Q56 44 98 50 Q56 56 50 98 Q44 56 2 50 Q44 44 50 2Z" fill="var(--cobalto)" stroke="var(--tinta)" stroke-width="1.5"/></svg>
+                            <span>SH</span>
+                        </div>
+                        <h3>Samuel Henrique Santos da Silva</h3>
+                        <small>DESENVOLVEDOR MULTIPLATAFORMA</small>
+                        <small class="op">Nº 0001 · ADMITE 1 IDEIA</small>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-8">
+                    <h2 class="frase reveal">Nasci entre <em class="c-ciano">coqueiros</em>, <em class="c-cobalto">mar azul</em> e uma <em class="c-caneta">muralha de serra</em>.</h2>
+                    <p class="bio reveal">Sou desenvolvedor multiplataforma em início de carreira e quero crescer em Infraestrutura e Cloud. Gosto de entender como as coisas funcionam por baixo, organizar processos, documentar o que aprendo e automatizar tarefas repetitivas. Aprendo fazendo, em projetos reais com banco de dados, código e trabalho em equipe.</p>
+                    <div class="row gy-4 fatos">
+                        <div class="col-12 col-sm-4 reveal" style="--d:.1s"><b>01</b><h4>Automação</h4><p>Se uma tarefa se repete, eu procuro um jeito de o código fazer por mim.</p></div>
+                        <div class="col-12 col-sm-4 reveal" style="--d:.2s"><b>02</b><h4>Dados</h4><p>Modelagem MER e bancos MySQL/MariaDB: estrutura, permissões e consistência.</p></div>
+                        <div class="col-12 col-sm-4 reveal" style="--d:.3s"><b>03</b><h4>Organização</h4><p>Scrum em equipe, documentação clara e processos que outras pessoas conseguem seguir.</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. HABILIDADES -->
+    <section class="cena cena-cobalto" id="habilidades">
+        <svg class="orbita-grande" viewBox="0 0 560 380" aria-hidden="true">
+            <ellipse cx="280" cy="236" rx="262" ry="54" transform="rotate(-14 280 236)" fill="var(--cobalto-claro)" opacity=".85"/>
+            <ellipse cx="280" cy="206" rx="270" ry="58" transform="rotate(-14 280 206)" fill="none" stroke="var(--ciano-claro)" stroke-width="2.2"/>
+            <g class="gira" transform="translate(280 170) scale(1.3) translate(-50 -50)"><path d="M50 2 Q56 44 98 50 Q56 56 50 98 Q44 56 2 50 Q44 44 50 2Z" fill="#fff"/></g>
+        </svg>
+        <div class="container-xl">
+            <p class="rotulo claro"><svg viewBox="0 0 100 100" width="22" height="22"><path d="M50 2 Q56 44 98 50 Q56 56 50 98 Q44 56 2 50 Q44 44 50 2Z" fill="var(--sol)"/></svg> 03 — HABILIDADES</p>
+            <h2 class="titulo-cena reveal">Habilidades</h2>
+            <p class="nota-mao amarelo reveal">(10 itens e contando…)</p>
+        </div>
+        <p class="rotulo-faixa container-xl">CÓDIGO &amp; JOGOS</p>
+        <div class="marquee" data-dir="-1" data-speed="60"><div class="trilho ciano">
+            <span>HTML &amp; CSS</span><i>✦</i><span>BOOTSTRAP</span><i>✦</i><span>JAVASCRIPT</span><i>✦</i><span>PHP</span><i>✦</i><span>GDSCRIPT / GODOT</span><i>✦</i><span>HTML &amp; CSS</span><i>✦</i><span>BOOTSTRAP</span><i>✦</i><span>JAVASCRIPT</span><i>✦</i><span>PHP</span><i>✦</i><span>GDSCRIPT / GODOT</span><i>✦</i><span>HTML &amp; CSS</span><i>✦</i><span>BOOTSTRAP</span><i>✦</i><span>JAVASCRIPT</span><i>✦</i><span>PHP</span><i>✦</i><span>GDSCRIPT / GODOT</span><i>✦</i><span>HTML &amp; CSS</span><i>✦</i><span>BOOTSTRAP</span><i>✦</i><span>JAVASCRIPT</span><i>✦</i><span>PHP</span><i>✦</i><span>GDSCRIPT / GODOT</span><i>✦</i>        </div></div>
+        <p class="rotulo-faixa container-xl">DESIGN, UX &amp; 3D / BANCO</p>
+        <div class="marquee" data-dir="1" data-speed="60"><div class="trilho papel">
+            <span>MYSQL / MARIADB</span><i>✦</i><span>FIGMA</span><i>✦</i><span>UI/UX</span><i>✦</i><span>UNREAL ENGINE</span><i>✦</i><span>BLENDER</span><i>✦</i><span>MYSQL / MARIADB</span><i>✦</i><span>FIGMA</span><i>✦</i><span>UI/UX</span><i>✦</i><span>UNREAL ENGINE</span><i>✦</i><span>BLENDER</span><i>✦</i><span>MYSQL / MARIADB</span><i>✦</i><span>FIGMA</span><i>✦</i><span>UI/UX</span><i>✦</i><span>UNREAL ENGINE</span><i>✦</i><span>BLENDER</span><i>✦</i><span>MYSQL / MARIADB</span><i>✦</i><span>FIGMA</span><i>✦</i><span>UI/UX</span><i>✦</i><span>UNREAL ENGINE</span><i>✦</i><span>BLENDER</span><i>✦</i>        </div></div>
+        <p class="nota-mao claro container-xl">cada coisa nova vira mais uma peça aqui ✎</p>
+    </section>
+
+    <!-- 4. PROJETOS -->
+    <section class="cena cena-papel" id="projetos">
+        <div class="container-xl">
+            <p class="rotulo"><svg viewBox="0 0 100 100" width="22" height="22"><path d="M50 2 Q56 44 98 50 Q56 56 50 98 Q44 56 2 50 Q44 44 50 2Z" fill="var(--cobalto)"/></svg> 04 — PROJETOS</p>
+            <h2 class="titulo-cena reveal">Projetos <span class="contagem">(04)</span></h2>
+            <p class="nota-mao vermelho reveal">folhas soltas, viraram ingressos ✎</p>
+            <div class="row gy-4 mt-3">
+                                                <div class="col-12 col-sm-6 col-lg-3 reveal" style="--d:0.00s">
+                    <article class="ingresso cor-sol" data-tilt>
+                        <div class="janela"><span class="num-janela">01</span></div>
+                        <span class="num">01</span>
+                        <h3>API Cronos</h3>
+                        <p>Site que acompanha o mercado de importação e exportação de São Paulo, feito em equipe com Scrum. Responsável pelo MVP e pela ligação das tabelas do banco com o site.</p>
+                        <small>WEB · BANCO DE DADOS · SCRUM</small>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 reveal" style="--d:0.12s">
+                    <article class="ingresso cor-cobalto" data-tilt>
+                        <div class="janela"><span class="num-janela">02</span></div>
+                        <span class="num">02</span>
+                        <h3>Mecha Horizon 3: Racing M</h3>
+                        <p>Jogo futurista de corrida de mechas inspirado em Armored Core, com combate, perseguições e propulsores de movimento procedural. Em desenvolvimento.</p>
+                        <small>UNREAL ENGINE · JOGOS</small>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 reveal" style="--d:0.24s">
+                    <article class="ingresso cor-ciano" data-tilt>
+                        <div class="janela"><span class="num-janela">03</span></div>
+                        <span class="num">03</span>
+                        <h3>Combate Matemático</h3>
+                        <p>Jogo 2D de plataforma na Godot 4.7, com combate por funções matemáticas.</p>
+                        <small>GODOT · GDSCRIPT</small>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 reveal" style="--d:0.36s">
+                    <article class="ingresso cor-caneta" data-tilt>
+                        <div class="janela"><span class="num-janela">04</span></div>
+                        <span class="num">04</span>
+                        <h3>Sistema de Pedidos</h3>
+                        <p>Protótipo de restaurante no Figma: mesas, pedidos, estoque e login.</p>
+                        <small>FIGMA · PROTÓTIPO</small>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CURRÍCULO -->
+    <section class="cena cena-papel" id="curriculo">
+        <div class="container-xl">
+            <p class="rotulo"><svg viewBox="0 0 100 100" width="22" height="22"><path d="M50 2 Q56 44 98 50 Q56 56 50 98 Q44 56 2 50 Q44 44 50 2Z" fill="var(--cobalto)"/></svg> 05 — CURRÍCULO</p>
+            <div class="row gy-5">
+                <div class="col-12 col-lg-5 reveal">
+                    <h2 class="titulo-cena menor">Currículo</h2>
+                    <p class="bio">Ensino médio completo. Em formação na área de tecnologia, com foco em banco de dados, web e automação.</p>
+                    <a href="curriculo.pdf" download class="pilula grande">BAIXAR CURRÍCULO ↓</a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 reveal" style="--d:.1s">
+                    <h3 class="mini">Idiomas</h3>
+                    <ul class="lista"><li>Português <small>nativo</small></li><li>Inglês <small>intermediário</small></li></ul>
+                    <h3 class="mini">Áreas de estudo</h3>
+                    <ul class="lista"><li>Desenho</li><li>Audiovisual e roteiro</li><li>Game design</li><li>UI/UX</li></ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 reveal" style="--d:.2s">
+                    <h3 class="mini">Certificados</h3>
+                    <ul class="lista">
+                        <li><a href="certificado-1.pdf" target="_blank" rel="noopener">Certificado 1 (PDF) ↗</a></li>
+                        <li><a href="certificado-2.pdf" target="_blank" rel="noopener">Certificado 2 (PDF) ↗</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. CONTATO -->
+    <section class="cena cena-papel contato" id="contato">
+        <div class="bolinhas" aria-hidden="true"><i style="--i:0"></i><i style="--i:1"></i><i style="--i:2"></i><i style="--i:3"></i><i style="--i:4"></i><i style="--i:5"></i><i style="--i:6"></i><i style="--i:7"></i><i style="--i:8"></i><i style="--i:9"></i><i style="--i:10"></i><i style="--i:11"></i><i style="--i:12"></i><i style="--i:13"></i><i style="--i:14"></i><i style="--i:15"></i><i style="--i:16"></i><i style="--i:17"></i><i style="--i:18"></i><i style="--i:19"></i><i style="--i:20"></i><i style="--i:21"></i><i style="--i:22"></i><i style="--i:23"></i><i style="--i:24"></i><i style="--i:25"></i><i style="--i:26"></i><i style="--i:27"></i><i style="--i:28"></i><i style="--i:29"></i></div>
+        <div class="container-xl">
+            <div class="row align-items-center gy-5">
+                <div class="col-12 col-lg-6">
+                    <h2 class="titulo-contato reveal">Vamos <br><span class="c-cobalto">conversar?</span></h2>
+                    <p class="nota-mao vermelho reveal">me manda um oi, de preferência com um desenho ✎</p>
+                    <p class="bio reveal">Disponível para estágio remoto, 6h por dia. Respondo rápido.</p>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="leque">
+                                                <a href="https://github.com/Samukashh" target="_blank" rel="noopener" class="canhoto cor-cobalto" style="--i:0">
+                            <svg viewBox="0 0 100 100" width="34" height="34"><path d="M50 2 Q56 44 98 50 Q56 56 50 98 Q44 56 2 50 Q44 44 50 2Z" fill="#fff"/></svg>
+                            <h3>GitHub</h3>
+                            <p>Samukashh</p>
+                            <span>abrir ↗</span>
+                        </a>
+                                                <a href="curriculo.pdf" download class="canhoto cor-ciano" style="--i:1">
+                            <svg viewBox="0 0 100 100" width="34" height="34"><path d="M50 2 Q56 44 98 50 Q56 56 50 98 Q44 56 2 50 Q44 44 50 2Z" fill="#fff"/></svg>
+                            <h3>Currículo</h3>
+                            <p>PDF para baixar</p>
+                            <span>baixar ↓</span>
+                        </a>
+                                                <a href="https://instagram.com/samuka.hss" target="_blank" rel="noopener" class="canhoto cor-sol" style="--i:2">
+                            <svg viewBox="0 0 100 100" width="34" height="34"><path d="M50 2 Q56 44 98 50 Q56 56 50 98 Q44 56 2 50 Q44 44 50 2Z" fill="#fff"/></svg>
+                            <h3>Instagram</h3>
+                            <p>@samuka.hss</p>
+                            <span>abrir ↗</span>
+                        </a>
+                                                <a href="mailto:samuka.hss77@gmail.com" class="canhoto cor-caneta" style="--i:3">
+                            <svg viewBox="0 0 100 100" width="34" height="34"><path d="M50 2 Q56 44 98 50 Q56 56 50 98 Q44 56 2 50 Q44 44 50 2Z" fill="#fff"/></svg>
+                            <h3>E-mail</h3>
+                            <p>samuka.hss77@gmail.com</p>
+                            <span>abrir ↗</span>
+                        </a>
+                                            </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. RODAPÉ -->
+    <footer class="rodape">
+        <div class="ondas" aria-hidden="true"><span></span><span></span><span></span></div>
+        <svg class="orbita-grande rodape-estrela" viewBox="0 0 560 380" aria-hidden="true"><g class="gira" transform="translate(280 170) scale(1.1) translate(-50 -50)"><path d="M50 2 Q56 44 98 50 Q56 56 50 98 Q44 56 2 50 Q44 44 50 2Z" fill="#fff"/></g></svg>
+        <div class="container-xl">
+            <h2 class="assinatura">Samuel</h2>
+            <p class="nota-mao amarelo">feito à mão, com código, mar e caderno amarelado.</p>
+            <div class="d-flex justify-content-between pt-5 rodape-base">
+                <span>© 2026 SAMUEL HENRIQUE</span>
+                <a href="#capa">VOLTAR AO TOPO ↑</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
